@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murottal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.cdnfonts.com/css/ramadhan-amazing" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;200;300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;200;300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/ramadhan-amazing');
+
+        * {
+
+            margin: 0;
+            padding: 0;
+        }
+
+        .inti {
+            background-image: url(bg3.png);
+        }
+
+
+        .top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100vw;
+            height: auto;
+
+        }
+
+        .top2 {
+            width: 80vw;
+            flex-direction: row;
+            background-color: none;
+        }
+
+        .df {
+            width: 80vw;
+            display: flex;
+            justify-content: left;
+        }
+
+        .dt {
+            margin-bottom: 15px;
+            font-family: poppins;
+            font-weight: 500;
+            font-size: 20px;
+            color: #202020;
+            margin-top: 30px;
+        }
+
+        .atas {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+
+            background-color: none;
+        }
+
+        .card {
+            transform: scale(1);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+
+        }
+
+        .top1 {
+            border-radius: 15px;
+            margin-top: 20px;
+            width: 82vw;
+            flex-direction: column;
+            margin-bottom: 20px;
+            height: 300px;
+            background-image: url(bg1.png);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #searchInput {
+            border: none;
+            border-radius: 30px;
+
+        }
+
+        #searchInput:focus {
+            border: none;
+            outline: none;
+        }
+
+        .bar {
+            padding: 3px 5px;
+            margin-top: 40px;
+            border-radius: 60px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            background-color: #ffffff;
+        }
+
+        .bs {
+            color: #ffffff;
+        }
+
+        .my {
+            font-family: Ramadhan Amazing;
+            font-size: 75px;
+            color: #ffffff;
+        }
+
+        .al {
+            margin-top: -10px;
+            font-family: poppins;
+            color: #ffffff;
+
+        }
+
+        .as {
+            font-family: poppins;
+            font-size: 30px;
+            color: #ffffff;
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 5px;
+            width: 300px;
+            border: none;
+        }
+
+        input[type="text"] {
+            border: none;
+            width: 80%;
+            padding: 10px;
+        }
+
+        button {
+            background-color: #0386e3;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0364a2;
+        }
+
+
+        .areacard {
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            font-weight: 700;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+
+        .card {
+            padding: 10px;
+            align-items: center;
+            justify-content: center;
+            background-color: #fafafa;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            width: 80vw;
+            height: 70px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .card:hover {
+            background-color: #EDF0F1;
+            /* Contoh warna biru muda */
+        }
+
+        .areat {
+
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .namaar {
+            display: flex;
+
+            align-items: center;
+            /* Mengatur item rata atas bawah (vertikal) */
+            width: 50%;
+            flex-direction: row;
+        }
+
+        .nama {
+            font-size: 20px;
+            font-weight: 500;
+            font-family: poppins;
+            color: #0386e3;
+        }
+
+        .arb {
+            margin-left: 10px;
+            font-weight: 300;
+        }
+
+        .arti {
+            margin-left: 5px;
+            font-size: 12px;
+            font-family: poppins;
+            font-weight: 400;
+        }
+
+        .tp {
+            margin-left: 5px;
+            font-size: 12px;
+            font-family: poppins;
+            font-weight: 400;
+            color: #0386e3;
+        }
+
+        .abouts {
+            display: flex;
+            align-items: center;
+            /* Mengatur item rata atas bawah (vertikal) */
+            width: 70%;
+            flex-direction: row;
+        }
+
+        .sk {
+            font-size: 13px;
+            font-family: poppins;
+            font-weight: 600;
+        }
+
+        .na {
+            font-size: 12px;
+            font-weight: 400;
+            font-family: poppins;
+            margin-left: 10px;
+        }
+
+        .mu {
+            flex-direction: row;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            width: 30%;
+        }
+
+        .fas {
+            color: #c4c4c4;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="inti">
+
+        <div class="atas">
+            <div class="top1">
+
+
+                <p class="my">Assalamualaikum</p>
+                <p class="al">"Murotal Al-quran 30 Juz Online"</p>
+
+                <div class="bar">
+                    <i class="fas fa-search"></i>
+                    <input style="margin-left: 10px;" type="text" id="searchInput" placeholder="Cari Surat...">
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="top">
+            <div class="top2">
+                <div class="df">
+                    <p class="dt">Daftar Surat :</p>
+                </div>
+            </div>
+
+            <div class="container" id="container"></div>
+        </div>
+    </div>
+
+    <script>
+        const url = 'https://raw.githubusercontent.com/penggguna/QuranJSON/master/quran.json';
+
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                const listData = document.getElementById('container');
+
+
+                data.forEach(el => {
+                    const areacard = document.createElement('div');
+                    areacard.classList.add('areacard');
+
+                    const card = document.createElement('div');
+                    card.classList.add('card');
+
+                    const areat = document.createElement('div');
+                    areat.classList.add('areat');
+
+                    const namaar = document.createElement('div');
+                    namaar.classList.add('namaar');
+
+                    const nama = document.createElement('p');
+                    nama.classList.add('nama');
+                    nama.textContent = el.name;
+
+                    const tp = document.createElement('p');
+                    tp.classList.add('tp');
+                    tp.textContent = (' |  ' + el.type);
+
+
+
+                    const arti = document.createElement('p');
+                    arti.classList.add('arti');
+                    arti.textContent = (' | ' + el.name_translations.id);
+
+                    const arb = document.createElement('p');
+                    arb.classList.add('arb');
+                    arb.textContent = (' |  ' + el.name_translations.ar);
+
+                    const abouts = document.createElement('div');
+                    abouts.classList.add('abouts');
+
+                    const sk = document.createElement('p');
+                    sk.classList.add('sk');
+                    sk.textContent = ('Surat Ke: ' + el.number_of_surah);
+
+                    const na = document.createElement('p');
+                    na.classList.add('na');
+                    na.textContent = ('Jumlah Ayat: ' + el.number_of_ayah);
+
+                    const mu = document.createElement('div');
+                    mu.classList.add('mu');
+
+                    const audio = document.createElement('audio');
+                    audio.classList.add('audio');
+                    audio.setAttribute('controls', '');
+                    audio.setAttribute('src', el.recitation);
+
+                    const icon = document.createElement('i');
+                    icon.classList.add('fas', 'fa-heart');
+
+
+
+
+
+                    listData.appendChild(areacard);
+                    areacard.appendChild(card);
+                    card.appendChild(areat);
+                    areat.appendChild(namaar);
+                    namaar.appendChild(nama);
+                    namaar.appendChild(arb);
+                    areat.appendChild(abouts);
+                    abouts.appendChild(sk);
+                    abouts.appendChild(na);
+                    abouts.appendChild(arti);
+                    abouts.appendChild(tp);
+                    card.appendChild(mu);
+                    mu.appendChild(audio);
+                    mu.appendChild(icon);
+
+
+
+                });
+
+                // Temukan elemen search input
+                const searchInput = document.getElementById('searchInput');
+
+                // Menambahkan event listener untuk meng-handle input dari user
+                searchInput.addEventListener('input', function () {
+                    const searchTerm = searchInput.value
+                        .toLowerCase(); // Mendapatkan teks dari search input dan mengubahnya menjadi huruf kecil
+
+                    // Mendapatkan semua card surat
+                    const cards = document.querySelectorAll('.card');
+
+                    // Melakukan iterasi melalui setiap card dan menyembunyikan/menampilkan sesuai pencarian
+                    cards.forEach(card => {
+                        const nama = card.querySelector('.nama').textContent
+                            .toLowerCase(); // Mendapatkan nama surat dalam huruf kecil
+                        if (nama.includes(searchTerm)) {
+                            card.style.display = 'flex'; // Menampilkan card jika ada kecocokan
+                        } else {
+                            card.style.display =
+                                'none'; // Menyembunyikan card jika tidak ada kecocokan
+                        }
+                    });
+                });
+            });
+    </script>
+</body>
+
+</html>
