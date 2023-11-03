@@ -2,8 +2,12 @@
 <html lang="en">
 
 <head>
+
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <title>Murottal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -291,6 +295,38 @@
         .fas {
             color: #c4c4c4;
             margin-left: 20px;
+        }
+
+        @media (max-width: 356px) {
+            .card {
+                height: 200px;
+                justify-content: left;
+                align-items: center;
+                padding: none;
+                flex-direction : column;
+            }
+            .namaar p{
+                width: 100%;
+                font-size: 15px;
+                padding: none;
+                flex-direction: column;
+            }
+            .areat p{
+                width: auto;
+                flex-direction: column;
+            }
+            .abouts{
+                display:grid;
+                font-size: 5px;
+                grid-template-columns: auto auto ;
+                flex-direction: column;
+            }
+            .arb{
+                display: none;
+            }
+            .audio{
+                width: 50px;
+            }
         }
     </style>
 </head>
